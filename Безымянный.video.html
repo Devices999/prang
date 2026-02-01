@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Видео</title>
+
+<style>
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+#video {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.play {
+    font-size: 80px;
+}
+
+#prank {
+    display: none;
+    padding-top: 80px;
+}
+
+.warning {
+    color: red;
+    font-size: 26px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+#timer {
+    font-size: 40px;
+}
+
+#joke {
+    display: none;
+    margin-top: 30px;
+    font-size: 22px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="video" onclick="start()">
+    <div>
+        <div class="play">▶️</div>
+        <p>Нажмите, чтобы посмотреть видео</p>
+    </div>
+</div>
+
+<div id="prank">
+    <h1 class="warning">⚠ ОБНАРУЖЕН ВЗЛОМ ⚠</h1>
+    <p>Передача данных через:</p>
+    <div id="timer">7</div>
+
+    <div id="joke">
+        спасибо
+        <br>
+        спасибо <!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Видео</title>
+
+<style>
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+#video {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.play {
+    font-size: 80px;
+}
+
+#prank {
+    display: none;
+    padding-top: 80px;
+}
+
+.warning {
+    color: red;
+    font-size: 26px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+#timer {
+    font-size: 40px;
+}
+
+#joke {
+    display: none;
+    margin-top: 30px;
+    font-size: 22px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="video" onclick="start()">
+    <div>
+        <div class="play">▶️</div>
+        <p>Нажмите, чтобы посмотреть видео</p>
+    </div>
+</div>
+
+<div id="prank">
+    <h1 class="warning">⚠ ОБНАРУЖЕН ВЗЛОМ ⚠</h1>
+    <p>Передача данных через:</p>
+    <div id="timer">7</div>
+
+    <div id="joke">
+        😄 Это шутка  
+        <br>
+        Ты только что открыл пранк
+    </div>
+</div>
+
+<script>
+let t = 7;
+
+function start() {
+    document.getElementById("video").style.display = "none";
+    document.getElementById("prank").style.display = "block";
+
+    let c = setInterval(() => {
+        t--;
+        document.getElementById("timer").textContent = t;
+
+        if (t <= 0) {
+            clearInterval(c);
+            document.getElementById("timer").style.display = "none";
+            document.getElementById("joke").style.display = "block";
+        }
+    }, 1000);
+}
+</script>
+
+</body>
+</html>
+    </div>
+</div>
+
+<script>
+let t = 7;
+
+function start() {
+    document.getElementById("video").style.display = "none";
+    document.getElementById("prank").style.display = "block";
+
+    let c = setInterval(() => {
+        t--;
+        document.getElementById("timer").textContent = t;
+
+        if (t <= 0) {
+            clearInterval(c);
+            document.getElementById("timer").style.display = "none";
+            document.getElementById("joke").style.display = "block";
+        }
+    }, 1000);
+}
+</script>
+
+</body>
+</html>
